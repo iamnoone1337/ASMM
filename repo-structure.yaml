@@ -1,0 +1,70 @@
+backend/
+  app/
+    __init__.py
+    main.py
+    config.py
+    db.py
+    logging_config.py
+    models.py
+    schemas.py
+    normalizer.py
+    resolver.py
+    orchestrator.py
+    rate_limiter.py
+    utils.py
+    api/
+      __init__.py
+      routes/
+        __init__.py
+        health.py
+        scan.py
+        assets.py
+    connectors/
+      __init__.py
+      base.py
+      crtsh.py
+      chaos.py
+      securitytrails.py
+      wayback.py
+      commoncrawl.py
+      bruteforce.py
+      fake.py
+    storage/
+      __init__.py
+      raw/  # local directory for raw connector responses (bonus)
+  alembic/
+    env.py
+    script.py.mako
+    versions/
+      20250918_0001_initial.py
+  requirements.txt
+  worker.py
+  pytest.ini
+  tests/
+    __init__.py
+    test_normalizer.py
+    test_resolver.py
+    test_integration_pipeline.py
+frontend/
+  index.html
+  package.json
+  tsconfig.json
+  vite.config.ts
+  src/
+    main.tsx
+    App.tsx
+    api.ts
+    components/
+      ScanForm.tsx
+      JobStatus.tsx
+      ResultsTable.tsx
+      ExportButtons.tsx
+  public/
+    favicon.svg
+docker-compose.yml
+Dockerfile.backend
+Dockerfile.frontend
+.env.example
+README.md
+wordlists/
+  subdomains.txt
