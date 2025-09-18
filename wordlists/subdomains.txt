@@ -1,0 +1,8 @@
+# Minimal sample wordlist (replace with SecLists in production)
+dev
+staging
+stage
+test
+api
+www
+admin
